@@ -1,0 +1,39 @@
+class Tst extends Efl.Object {
+   methods {
+     @property label {
+         set {
+         }
+         get {
+         }
+         values {
+            name: string; [[ The name of the tst object as a C string ]]
+         }
+      }
+      @property size {
+         set { 
+            return: int;
+         }
+         get {
+         }
+         values {
+            size: int; [[ The size in pixels ]]
+         }
+      }
+      activate { 
+         params {
+            @in number: int; [[ The number of pixels to activate ]]
+            @in str: string; [[ A label to display on activation ]]
+         }
+         return: bool; [[ If activation succeeds, return EINA_TRUE ]]
+      }
+      disable {
+         params {
+            @in level: int; [[ This is the disabling level to use ]]
+         }
+      }
+   }
+   events {
+      activated: void; [[ When the tst object has been activated ]]
+      disabled: void; [[ When the tst object has been disabled ]]
+   }
+}

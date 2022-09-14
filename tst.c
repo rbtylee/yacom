@@ -18,9 +18,8 @@ EOLIAN static void
 _tst_label_set(Eo *obj, Tst_Data *pd, const char *name)
 {
    printf("set label: %s -> %s\n", pd->name, name);
-   // do i need the below or is it automatic taken care of by Efl.Object
-   //if (pd->name) free(pd->name);
-   //pd->name = strdup(name);
+   if (pd->name) free(pd->name);
+   pd->name = strdup(name);
 }
 
 EOLIAN static const char *

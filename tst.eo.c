@@ -115,8 +115,8 @@ static const Efl_Class_Description _tst_class_desc = {
    EFL_CLASS_TYPE_REGULAR,
    sizeof(Tst_Data),
    _tst_class_initializer,
-   NULL,
-   NULL
+   _tst_class_constructor,
+   _tst_class_destructor
 };
 
 EFL_DEFINE_CLASS(tst_class_get, &_tst_class_desc, EFL_OBJECT_CLASS, NULL);

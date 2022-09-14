@@ -32,6 +32,10 @@ class Tst extends Efl.Object {
          }
       }
    }
+   implements {
+      class.constructor;
+      class.destructor;
+   }
    events {
       activated: void; [[ When the tst object has been activated ]]
       disabled: void; [[ When the tst object has been disabled ]]

@@ -2,10 +2,6 @@
 #include <Eo.h>
 #include "tst.eo.h"
 
-#define EFL_BETA_API_SUPPORT
-#include <Eo.h>
-#include "tst.eo.h"
-
 typedef struct
 {
    int size;
